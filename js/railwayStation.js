@@ -4,11 +4,11 @@ class RailwayStation {
     constructor({scene}) {
         this.scene = scene,
         this.loader  = new THREE.TextureLoader(),
-        this.brick = this.loader.load( '../assets/texture/brick2.jpg' ),
-        this.tile = this.loader.load( '../assets/texture/tile.jpg' ),
-        this.gate = this.loader.load( '../assets/texture/gate.jpg' ),
-        this.gatetop = this.loader.load( '../assets/texture/gatetop.jpg' ),
-        this.window = this.loader.load( '../assets/texture/topwindow.jpg' )
+        this.brick = this.loader.load( '/train-station-three-js/assets/texture/brick2.jpg' ),
+        this.tile = this.loader.load( '/train-station-three-js/assets/texture/tile.jpg' ),
+        this.gate = this.loader.load( '/train-station-three-js/assets/texture/gate.jpg' ),
+        this.gatetop = this.loader.load( '/train-station-three-js/assets/texture/gatetop.jpg' ),
+        this.window = this.loader.load( '/train-station-three-js/assets/texture/topwindow.jpg' )
     }
 
     draw() {
