@@ -182,12 +182,12 @@ var Main = function ({container}) {
 
     function loadBackground(tod) {
         let texture = loader.load([
-            './assets/texture/'+tod+'/posy.jpg',
-            './assets/texture/'+tod+'/negy.jpg',
-            './assets/texture/'+tod+'/posz.jpg',
-            './assets/texture/'+tod+'/negz.jpg',
-            './assets/texture/'+tod+'/posx.jpg',
-            './assets/texture/'+tod+'/negx.jpg',
+            '/assets/texture/'+tod+'/posy.jpg',
+            '/assets/texture/'+tod+'/negy.jpg',
+            '/assets/texture/'+tod+'/posz.jpg',
+            '/assets/texture/'+tod+'/negz.jpg',
+            '/assets/texture/'+tod+'/posx.jpg',
+            '/assets/texture/'+tod+'/negx.jpg',
         ]);
         scene.background = texture;
     }
