@@ -10,7 +10,7 @@ class Ground {
          * Create base
          */
         var textureLoader = new THREE.TextureLoader();
-        var texture = textureLoader.load( '../assets/texture/stone.jpg' );
+        var texture = textureLoader.load( '/train-station-three-js/assets/texture/stone.jpg' );
         texture.wrapS = THREE.RepeatWrapping;
         texture.wrapT = THREE.RepeatWrapping;
         texture.repeat.set( 50, 50 );
@@ -23,7 +23,7 @@ class Ground {
         mesh.castShadow = false;
         this.scene.add( mesh );
 
-        let texture2 = textureLoader.load( '../assets/texture/grass.jpg' );
+        let texture2 = textureLoader.load( '/train-station-three-js/assets/texture/grass.jpg' );
         texture2.wrapS = THREE.RepeatWrapping;
         texture2.wrapT = THREE.RepeatWrapping;
         texture2.repeat.set( 50, 50 );
