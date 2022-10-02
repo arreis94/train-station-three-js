@@ -109,7 +109,7 @@ class Train {
         let camPosition = this.calculatePosition({r:this.r+5,rotation:this.rotation+40});
         this.camera.position.set(camPosition.x,camPosition.y+5,camPosition.z);
 
-        this.TOOLS.loadBlender({obj:'../../assets/models/train.obj',mtl:'../../assets/models/train.mtl'}).then((train) => {
+        this.TOOLS.loadBlender({obj:'./assets/models/train.obj',mtl:'./assets/models/train.mtl'}).then((train) => {
             this.train = train;
             let c = this.calculatePosition({r:this.r,rotation:this.rotation});
             this.train.position.set(c.x,c.y,c.z);
