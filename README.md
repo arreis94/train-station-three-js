@@ -1,6 +1,6 @@
 # train-station-three-js
 Train station with blender imports and interactive objects in Three.js
-
+Demo: [arreis94.github.io](https://arreis94.github.io/train-station-three-js/)
 This is a university example program using Javascript and the Three.js library.
 The project imports tree and train models created in Blender.
 Day and night mode is adjustable, includes lighting, textures and animations and interactable objects.
