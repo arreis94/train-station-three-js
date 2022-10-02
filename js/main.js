@@ -6,7 +6,7 @@ import Stats from '../js-r132/examples/jsm/libs/stats.module.js';
 import PoleLamp from './pole_lamp.js';
 import Rails from './rails.js';
 import Commons from './commons.js';
-import Train from './Train.js';
+import Train from './train.js';
 import Ground from './ground.js';
 import RailwayStation from './railwayStation.js';
 import LevelCrossing from './levelCrossing.js';
