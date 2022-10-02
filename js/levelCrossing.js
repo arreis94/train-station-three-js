@@ -75,7 +75,7 @@ class LevelCrossing {
         /**
         * Pole
         */
-        texture = textureLoader.load( '/train-station-three-jsassets/texture/silver.jpg' );
+        texture = textureLoader.load( '/train-station-three-js/assets/texture/silver.jpg' );
         this.geometry = new THREE.CylinderGeometry( 0.1, 0.1, 5, Math.PI*8 );
         this.material = new THREE.MeshPhongMaterial(  { color: 0xbdbdbd, specular: 0xffffff, side: THREE.DoubleSide } );
         this.material.map = texture;
