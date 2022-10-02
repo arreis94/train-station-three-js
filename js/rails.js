@@ -31,7 +31,7 @@ class Rails {
     draw() {
 
         var textureLoader = new THREE.TextureLoader();
-        var texture = textureLoader.load( '../assets/texture/coal.jpg' );
+        var texture = textureLoader.load( '/train-station-three-js/assets/texture/coal.jpg' );
         texture.repeat.set( 50, 50 );
         texture.wrapS = THREE.RepeatWrapping;
 		texture.wrapT = THREE.RepeatWrapping;
@@ -48,7 +48,7 @@ class Rails {
 
         this.geometry = new THREE.RingGeometry( 35.4, 35.2, 360 );
         this.material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0xffffff, side: THREE.DoubleSide } );
-        texture = textureLoader.load( '../assets/texture/silver.jpg' );
+        texture = textureLoader.load( '/train-station-three-js/assets/texture/silver.jpg' );
         this.material.map = texture;
         this.mesh = new THREE.Mesh( this.geometry, this.material );
         this.mesh.position.set(this.position.x,this.position.y+0.18,this.position.z);
@@ -59,7 +59,7 @@ class Rails {
 
         this.geometry = new THREE.RingGeometry( 33, 32.8, 360 );
         this.material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0xffffff, side: THREE.DoubleSide } );
-        texture = textureLoader.load( '../assets/texture/silver.jpg' );
+        texture = textureLoader.load( '/train-station-three-js/assets/texture/silver.jpg' );
         this.material.map = texture;
         this.mesh = new THREE.Mesh( this.geometry, this.material );
         this.mesh.position.set(this.position.x,this.position.y+0.18,this.position.z);
@@ -68,7 +68,7 @@ class Rails {
         this.mesh.castShadow = false;
         this.scene.add( this.mesh );
 
-        texture = textureLoader.load( '../assets/texture/darkwood.jpg' );
+        texture = textureLoader.load( '/train-station-three-js/assets/texture/darkwood.jpg' );
         
         this.geometry = new THREE.BoxGeometry( 0.1, 3, 0.5 );
         this.material = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0xffffff, side: THREE.DoubleSide } );
