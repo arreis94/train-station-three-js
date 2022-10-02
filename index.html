@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Train Station</title>
+        <meta name="description" content=""/>
+        <link rel="shortcut icon" type="image/png" href="favicon.ico">
+        <!-- Preloading content -->
+        <link href="css/style.css" rel="preload" as="style" type="text/css" crossorigin="anonymous">
+        <!-- Scripts and styles -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+    </head>
+    <body>
+        <script type="module">
+            import Main from './js/main.js'
+            let main = new Main({container:"main"});
+            main.init();          
+        </script>
+        <div id="canvas">
+            <canvas id="main"></canvas>
+        </div>
+    </body>
+</html>
