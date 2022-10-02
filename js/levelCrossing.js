@@ -31,7 +31,7 @@ class LevelCrossing {
 
     draw = () => {
         var textureLoader = new THREE.TextureLoader();
-        var texture = textureLoader.load( '../assets/texture/stone.jpg' );
+        var texture = textureLoader.load( '/train-station-three-js/assets/texture/stone.jpg' );
         texture.wrapS = THREE.RepeatWrapping;
         texture.wrapT = THREE.RepeatWrapping;
         texture.repeat.set( 3,30 );
@@ -49,7 +49,7 @@ class LevelCrossing {
          this.mesh.rotation.x = THREE.MathUtils.degToRad(90);
          this.scene.add( this.mesh );
         
-        texture = textureLoader.load( '../assets/texture/tablecross.jpg' );
+        texture = textureLoader.load( '/train-station-three-js/assets/texture/tablecross.jpg' );
         texture.wrapS = THREE.RepeatWrapping;
         texture.wrapT = THREE.RepeatWrapping;
         texture.repeat.set( 1, 1 );
@@ -75,7 +75,7 @@ class LevelCrossing {
         /**
         * Pole
         */
-        texture = textureLoader.load( '../assets/texture/silver.jpg' );
+        texture = textureLoader.load( '/train-station-three-jsassets/texture/silver.jpg' );
         this.geometry = new THREE.CylinderGeometry( 0.1, 0.1, 5, Math.PI*8 );
         this.material = new THREE.MeshPhongMaterial(  { color: 0xbdbdbd, specular: 0xffffff, side: THREE.DoubleSide } );
         this.material.map = texture;
@@ -172,7 +172,7 @@ class LevelCrossing {
           */
          this.geometry = new THREE.BoxGeometry( 0.1, 0.3, 5 );
          this.material = new THREE.MeshPhongMaterial(  { color: 0xbdbdbd, specular: 0xffffff, side: THREE.DoubleSide } );
-         texture = textureLoader.load( '../assets/texture/level.jpg' );
+         texture = textureLoader.load( '/train-station-three-js/assets/texture/level.jpg' );
          this.material.map = texture;
          this.mesh = new THREE.Mesh( this.geometry, this.material );
          this.mesh.castShadow = true;
